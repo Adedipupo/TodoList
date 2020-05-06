@@ -19,7 +19,7 @@ function TodoForm({addTodo}) {
   const [value, setValue] = useState('');
   const handleSubmit = (e) => { 
     e.preventDefault();
-    if(!value) return;
+    if(!value) return alert('add an item');
     addTodo(value);
     setValue(''); 
   }
